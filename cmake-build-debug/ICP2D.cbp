@@ -17,11 +17,61 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
+			<Target title="libicp">
+				<Option output="/home/comoer/Workspace/ICP2D/cmake-build-debug/liblibicp.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/comoer/Workspace/ICP2D/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/comoer/Workspace/ICP2D/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 libicp"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libicp/fast">
+				<Option output="/home/comoer/Workspace/ICP2D/cmake-build-debug/liblibicp.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/comoer/Workspace/ICP2D/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/comoer/Workspace/ICP2D/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 libicp/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
 				<Option working_dir="/home/comoer/Workspace/ICP2D/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -79,26 +129,26 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="rebuild_cache">
 				<Option working_dir="/home/comoer/Workspace/ICP2D/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="libicp">
-				<Option output="/home/comoer/Workspace/ICP2D/cmake-build-debug/liblibicp.so" prefix_auto="0" extension_auto="0"/>
+			<Target title="crop">
+				<Option output="/home/comoer/Workspace/ICP2D/cmake-build-debug/crop" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/comoer/Workspace/ICP2D/cmake-build-debug"/>
 				<Option object_output="./"/>
-				<Option type="3"/>
+				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/comoer/Workspace/ICP2D/include"/>
+					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -108,22 +158,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 libicp"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 crop"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="libicp/fast">
-				<Option output="/home/comoer/Workspace/ICP2D/cmake-build-debug/liblibicp.so" prefix_auto="0" extension_auto="0"/>
+			<Target title="crop/fast">
+				<Option output="/home/comoer/Workspace/ICP2D/cmake-build-debug/crop" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/comoer/Workspace/ICP2D/cmake-build-debug"/>
 				<Option object_output="./"/>
-				<Option type="3"/>
+				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/comoer/Workspace/ICP2D/include"/>
+					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -133,13 +183,16 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 libicp/fast"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 crop/fast"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/comoer/Workspace/ICP2D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/comoer/Workspace/ICP2D/crop.cpp">
+			<Option target="crop"/>
+		</Unit>
 		<Unit filename="/home/comoer/Workspace/ICP2D/include/icp2d.cpp">
 			<Option target="libicp"/>
 		</Unit>

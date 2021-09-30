@@ -11,8 +11,8 @@ int main(int argc,char** argv) {
     Mat view = imread(argv[2]);
 
     AffineICP icp(origin);
-    Mat H;
-    icp.solve(view,H);
+    Mat H(3,3,CV_32F);
+    icp.solve(view,H,4,300,0.1);
 
     //from the example of opencv
     //! [estimate-homography]

@@ -23,6 +23,7 @@ private:
     Mat descriptor_origin;
     vector<Point2f> points_origin; // the point set in the origin image
     Ptr<ORB> orb;
+    Mat cache_origin;
 public:
     AffineICP(const Mat& origin);
     void solve(const Mat& view,Mat &H,double release_radio = 4.,int max_iter = 10,double thres = 0.1);
