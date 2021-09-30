@@ -13,5 +13,5 @@ int main(int argc,char** argv)
     namedWindow("show",WINDOW_NORMAL);
     resizeWindow("show",1000,600);
     Rect rect = selectROI("show",img);
-    imwrite("../data/R0_crop.jpg",img(rect));
+    imwrite(argv[2],img(rect));
 }
