@@ -73,7 +73,7 @@ void AffineICP::solve(const Mat &view, Mat &H,double release_radio,int max_iter,
 
     for(const DMatch& m:match)
     {
-        if(m.distance < 1.3*min_dist)
+        if(m.distance < 2*min_dist)
         {
             pointset1.push_back(features_origin[m.queryIdx].pt);
             pointset2.push_back(features_view[m.trainIdx].pt);
